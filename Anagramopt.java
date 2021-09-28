@@ -4,14 +4,16 @@ public class Anagramopt {
 	public static void main(String[] args) {
 		String a="aab";
 		String b="aba";
+		String d = a.toLowerCase();
+		String e= b.toLowerCase();
 		boolean isAnagram=true;
 		int al[]=new int[256];
 		
-		for(char c:a.toCharArray()) {
+		for(char c:d.toCharArray()) {
 			int index=(int) c;
 			al[index]++;
 		  }
-		for(char c:b.toCharArray()) {
+		for(char c:e.toCharArray()) {
 			int index=(int) c;
 			al[index]--;
 		  }
